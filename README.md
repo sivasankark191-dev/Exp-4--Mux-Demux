@@ -15,6 +15,7 @@ Boolean Functions
 <img width="575" height="65" alt="image" src="https://github.com/user-attachments/assets/04c2d90c-0b6b-4b35-b603-d0e10e1e4f00" />
 
 ## Design / RTL Program
+```
 module mux2to1 (
     input  wire A,      // input line 0
     input  wire B,      // input line 1
@@ -36,7 +37,7 @@ endmodule
 
 ```
 ## **Testbench Program
-module tb4;
+```module tb4;
     reg  A, B, S, D;
     wire Y;
     wire Y0, Y1;
@@ -56,7 +57,7 @@ module tb4;
         .Y0(Y0),
         .Y1(Y1)
     );
- 
+     
     initial begin
         // ---- VCD dump setup ----
         $dumpfile("mux_demux.vcd");   // name of the VCD file to be generated
@@ -81,7 +82,7 @@ module tb4;
         #10 $finish;
     end
 endmodule
-
+```
 
 
 ## Truth Table
